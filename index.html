@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="static/css/animations.css">
     <link rel="stylesheet" href="static/css/styles.css">
 
     <title>Kim.P</title>
@@ -46,17 +47,17 @@
 
     <!-- Introduction -->
     <section id="intro">
-        <div class="row">
-            <div class="col-lg-6 intro-grey">
+        <div class="row animatedParent "data-sequence='500'>
+            <div class="col-lg-6 intro-grey animated fadeInLeft" data-id='1'>
                 <div class="intro-content">
-                    <h1 class="display-4">Hello, I'm Kim Pearton.</h1>
+                    <h1 class="display-4">Hi, I'm Kim.</h1>
                     <p class="lead">I'm a Full Stack Web Developer from London.</p>
                     <p class="lead">
                         <a class="btn btn-warning btn-lg" href="#projects" role="button">See my work</a>
                     </p>
                 </div>
             </div>
-            <div class="col-lg-6 intro-yellow">
+            <div class="col-lg-6 intro-yellow animated fadeInRight" data-id='2'>
                 <div class="intro-content">
                     <h1 class="display-4">Hello, I'm Kim Pearton.</h1>
                     <p class="lead">I'm a Full Stack Web Developer from London.</p>
@@ -66,8 +67,16 @@
                 </div>
             </div>
         </div>
+    </section>
 
+    <!-- Projects -->
+    <section id="projects">
+        <div class="projects-wrapper">
+            <!-- Project 1 -->
+            <div class="row project-row">
 
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -91,6 +100,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="static/js/animate.js"></script>
 </body>
 
 </html>
