@@ -119,44 +119,9 @@ nav a img {
 
 /*-- Projects --*/
 
-.project-tile {
-    padding: 3px;
-    margin: 0;
-    border-radius: 5px;
-}
-
-.project-description {
+.project-row {
     background-color: #fafafa;
-    color: #000;
-    padding: 2rem;
-    margin: auto;
-}
-
-.badge {
-    margin: 5px;
-}
-
-.project-cover {
-    width: 50%;
-    margin: auto;
-    padding: 1rem;
-}
-  
-.project-cover img {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.project-cover:hover img {
-    filter: brightness(40%);
-}
-
-.project-cover:hover .button {
-    opacity: 1;
+    
 }
   
 /*-- Skills --*/
