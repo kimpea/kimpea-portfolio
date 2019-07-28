@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="static/css/animations.css">
     <link rel="stylesheet" href="static/css/styles.css">
 
     <title>Kim.P</title>
@@ -30,13 +29,13 @@
         <div class="collapse navbar-collapse" id="navbarColor03">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#intro">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#intro">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -47,9 +46,9 @@
 
     <!-- Introduction -->
     <section id="intro">
-        <div class="row animatedParent "data-sequence='500'>
-            <div class="col-lg-6 intro-grey animated fadeInLeft" data-id='1'>
-                <div class="intro-content">
+        <div class="row">
+            <div class="col-lg-6 intro-grey">
+                <div class="intro-content fromLeftIn" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
                     <h1 class="display-4">Hi, I'm Kim.</h1>
                     <p class="lead">I'm a Full Stack Web Developer from London.</p>
                     <p class="lead">
@@ -57,8 +56,8 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-6 intro-yellow animated fadeInRight" data-id='2'>
-                <div class="intro-content">
+            <div class="col-lg-6 intro-yellow">
+                <div class="intro-content fromRightIn" data-scroll="toggle(.fromRightIn, .fromRightOut)">
                     <h1 class="display-4">Hello, I'm Kim Pearton.</h1>
                     <p class="lead">I'm a Full Stack Web Developer from London.</p>
                     <p class="lead">
@@ -71,36 +70,120 @@
 
     <!-- Projects -->
     <section id="projects">
-        <div class="projects-wrapper">
-            <!-- Project 1 -->
-            <div class="row project-row">
-
+        <!-- Project 1 -->
+        <div class="row project-row">
+            <div class="col-lg-4 project-image">
+                <img src="static/img/queen-cover.png" class="fromLeftIn"
+                    data-scroll="toggle(.fromLeftIn, .fromLeftOut)" />
+            </div>
+            <div class="col-lg-6 project-description fromRightIn" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                <h4 class="display-5">Queen</h4>
+                <p>A simple static front-end website based on the popular rock band <i>Queen</i>.</p>
+                <span class="badge badge-primary">HTML</span>
+                <span class="badge badge-primary">CSS</span>
+                <span class="badge badge-primary">Bootstrap</span>
+            </div>
+        </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="row project-row animatedParent">
+            <div class="col-lg-4 project-image">
+                <img src="static/img/limitless-cover.png" class="fromLeftIn"
+                    data-scroll="toggle(.fromLeftIn, .fromLeftOut)" />
+            </div>
+            <div class="col-lg-6 project-description fromRightIn" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                <h4 class="display-5">Limitless</h4>
+                <p>A simple interactive front-end website built using Google Maps API and made for holiday-goers.</p>
+                <span class="badge badge-primary">HTML</span>
+                <span class="badge badge-primary">CSS</span>
+                <span class="badge badge-primary">JavaScript</span>
+                <span class="badge badge-primary">Google Maps API</span>
+                <span class="badge badge-primary">Bootstrap</span>
+            </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="row project-row animatedParent">
+            <div class="col-lg-4 project-image">
+                <img src="static/img/quiz-cover.png" class="fromLeftIn"
+                    data-scroll="toggle(.fromLeftIn, .fromLeftOut)" />
+            </div>
+            <div class="col-lg-6 project-description fromRightIn" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                <h4 class="display-5">Exotic Fruits Quiz</h4>
+                <p>An interactive front and back-end quiz testing your knowledge on the exotic fruits of the world.</p>
+                <span class="badge badge-primary">HTML</span>
+                <span class="badge badge-primary">CSS</span>
+                <span class="badge badge-primary">Python</span>
+                <span class="badge badge-primary">Flask</span>
+                <span class="badge badge-primary">Bootstrap</span>
+                <span class="badge badge-primary">Heroku</span>
+            </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="row project-row animatedParent">
+            <div class="col-lg-4 project-image">
+                <img src="static/img/cookery-cover.png" class="fromLeftIn"
+                    data-scroll="toggle(.fromLeftIn, .fromLeftOut)" />
+            </div>
+            <div class="col-lg-6 project-description fromRightIn" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                <h4 class="display-5">The Cookery Cove</h4>
+                <p>An interactive front and back-end cookbook application built on a dynamic database full of recipes.
+                </p>
+                <span class="badge badge-primary">HTML</span>
+                <span class="badge badge-primary">CSS</span>
+                <span class="badge badge-primary">Python</span>
+                <span class="badge badge-primary">Flask</span>
+                <span class="badge badge-primary">MongoDB</span>
+                <span class="badge badge-primary">Materialize</span>
+                <span class="badge badge-primary">Heroku</span>
+            </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="row project-row animatedParent">
+            <div class="col-lg-4 project-image">
+                <img src="static/img/tracker-cover.png" class="fromLeftIn"
+                    data-scroll="toggle(.fromLeftIn, .fromLeftOut)" />
+            </div>
+            <div class="col-lg-6 project-description fromRightIn" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                <h4 class="display-5">Issue Tracker</h4>
+                <p>An interactive front and back-end website tracking reported bugs and requested features for an
+                    imaginary application.</p>
+                <span class="badge badge-primary">HTML</span>
+                <span class="badge badge-primary">CSS</span>
+                <span class="badge badge-primary">Python</span>
+                <span class="badge badge-primary">Django</span>
+                <span class="badge badge-primary">Bootstrap</span>
+                <span class="badge badge-primary">Heroku</span>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <section id="skills">
+
+    </section>
+
+    <section id="education">
+
+    </section>
+
+    <section id="contact">
         <div class="container social-links">
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/kimpea"><i
                     class="fab fa-github"></i></a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kimpea/"><i
                     class="fab fa-linkedin-in"></i></a>
         </div>
-    </footer>
+    </section>
 
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/93d8fa7e05.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="static/js/animate.js"></script>
+    <script src="static/js/ScrollTrigger.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var trigger = new ScrollTrigger({
+                addHeight: true
+            });
+        });
+    </script>
 </body>
 
 </html>
