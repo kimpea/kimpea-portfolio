@@ -6,4 +6,4 @@ Created by Kimberley Pearton
 
 ### Credits and Acknowledgements
 
- - [**CSS3 Animate It**](https://jackonthe.net/css3animateit/) - used to provide animation for the website with element transitions.
+ - [**Scroll Trigger**](https://terwanerik.github.io/ScrollTrigger/) - used to provide animation for the website when scroll is triggered.
