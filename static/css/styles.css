@@ -1,7 +1,7 @@
 /*-- Fonts --*/
+
 @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-
 /*-- HTML and Body --*/
 
 html {
@@ -10,17 +10,18 @@ html {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 body {
-    margin-bottom: 66px; /* Margin bottom by footer height */
+    margin-bottom: 66px;
+    /* Margin bottom by footer height */
     font-family: 'Oxygen', sans-serif;
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 /*-- Special Styles --*/
@@ -29,12 +30,11 @@ p, ul {
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 .section-heading {
     margin-bottom: 2rem;
     padding: 0;
 }
+
 section {
     height: 100vh;
 }
@@ -75,6 +75,196 @@ a:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
 }
+
+.invisible {
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+.visible {
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/*-- Animations --*/
+
+.fromTopIn {
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease;
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1
+}
+
+.fromBottomIn, .fromTopOut {
+    transition: opacity 1s ease, -webkit-transform 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease
+}
+
+.fromTopOut {
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+    -webkit-transform: translate(0, -10px);
+    -moz-transform: translate(0, -10px);
+    -ms-transform: translate(0, -10px);
+    -o-transform: translate(0, -10px);
+    transform: translate(0, -10px);
+    opacity: 0
+}
+
+.fromBottomIn {
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1
+}
+
+.fromBottomOut, .fromLeftIn {
+    transition: opacity 1s ease, -webkit-transform 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease
+}
+
+.fromBottomOut {
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0
+}
+
+.fromLeftIn {
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1
+}
+
+.fromLeftOut, .fromRightIn {
+    transition: opacity 1s ease, -webkit-transform 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease
+}
+
+.fromLeftOut {
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+    -webkit-transform: translate(-10px, 0);
+    -moz-transform: translate(-10px, 0);
+    -ms-transform: translate(-10px, 0);
+    -o-transform: translate(-10px, 0);
+    transform: translate(-10px, 0);
+    opacity: 0
+}
+
+.fromRightIn {
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1
+}
+
+.fromRightOut, .scaleUpIn {
+    transition: opacity 1s ease, -webkit-transform 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease
+}
+
+.fromRightOut {
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+    -webkit-transform: translate(10px, 0);
+    -moz-transform: translate(10px, 0);
+    -ms-transform: translate(10px, 0);
+    -o-transform: translate(10px, 0);
+    transform: translate(10px, 0);
+    opacity: 0
+}
+
+.scaleUpIn {
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1
+}
+
+.scaleDownIn, .scaleUpOut {
+    transition: opacity 1s ease, -webkit-transform 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease
+}
+
+.scaleUpOut {
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+    -webkit-transform: scale(1.3, 1.3);
+    -moz-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+    -o-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+    opacity: 0
+}
+
+.scaleDownIn {
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1
+}
+
+.scaleDownOut {
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease;
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+    -webkit-transform: scale(.7, .7);
+    -moz-transform: scale(.7, .7);
+    -ms-transform: scale(.7, .7);
+    -o-transform: scale(.7, .7);
+    transform: scale(.7, .7);
+    opacity: 0
+}
+
 /*-- Nav --*/
 
 nav a img {
@@ -121,9 +311,23 @@ nav a img {
 
 .project-row {
     background-color: #fafafa;
-    
 }
-  
+
+.project-image {
+    padding: 3rem 5rem;
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-description {
+    background-color: #fafafa;
+    color: #000;
+    padding: 2rem;
+    margin: auto;
+}
+
 /*-- Skills --*/
 
 .determinate {
@@ -191,36 +395,20 @@ nav a img {
 
 /*-- Contact --*/
 
-#contact .jumbotron {
-    margin-bottom: 10rem;
-}
-
-/*-- Footer --*/
-
-footer {
-    position: absolute;
-    padding: 1rem;
-    bottom: 0;
-    width: 100%;
-    height: 66px;
-    line-height: 1rem;
-    background-color: #000;
-}
-
 .social-links a {
     padding: 10px;
 }
 
 .social-links a i {
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
     padding: 12px 0;
     border-radius: 50%;
-    font-size:20px;
+    font-size: 20px;
     line-height: 11px;
     text-align: center;
-    color:#000;
-    background:#fafafa;
+    color: #000;
+    background: #fafafa;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -228,8 +416,7 @@ footer {
 }
 
 .social-links a i:hover {
-    transform:scale(1.2);
-    background:#fafafa;
+    transform: scale(1.2);
+    background: #fafafa;
     color: #38FF81;
-
 }
