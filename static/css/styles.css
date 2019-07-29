@@ -73,8 +73,8 @@ a:hover {
 }
 
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .invisible {
@@ -286,24 +286,13 @@ nav a img {
     margin: auto;
     background-color: #e9ecef;
     height: 100vh;
+    color: #000;
+    font-size: 1.5rem;
 }
 
-@media screen and (min-width: 375px) and (max-width: 667px) and (orientation : portrait){
-    .intro-grey {
-        padding: 2rem;
-        margin-top: 3rem;
-    }
-    .intro-grey h1, .intro-yellow h1 {
-        font-size: 3rem;
-    }
-
-    .intro-yellow {
-        padding: 4rem !important;
-    }
-}
 
 .intro-yellow {
-    padding: 8rem;
+    padding: 15rem 6rem;
     margin: auto;
     background-color: #f0ad4e;
     height: 100vh;
@@ -311,26 +300,12 @@ nav a img {
 }
 
 .about-description {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .profile-picture {
     width: 55%;
     padding: 2rem 0 2rem 0;
-}
-
-/*-- About --*/
-
-.about-container {
-    background-color: #fafafa;
-    color: #000;
-    margin: auto;
-}
-
-.about-container img {
-    border-radius: 50%;
-    width: 100%;
-    padding: 3rem;
 }
 
 /*-- Projects --*/
@@ -355,52 +330,62 @@ nav a img {
     height: auto;
 }
 
-/*-- Skills --*/
-
-/*-- Education --*/
-
-.certificate img {
-    width: 100%;
-    height: auto;
-}
-
-.certificate-details {
-    background-color: #fafafa;
-    color: #000;
-    padding: 2rem;
-    margin: 8rem 1rem;
-}
-
-.certificate-details ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
 /*-- Contact --*/
 
-.social-links a {
-    padding: 10px;
+#contact {
+    background-color: #000;
+    color: #fafafa;
+    max-height: 50vh;
 }
 
-.social-links a i {
-    width: 35px;
-    height: 35px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 20px;
-    line-height: 11px;
-    text-align: center;
-    color: #000;
-    background: #fafafa;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+.contact {
+    margin: auto;
+    padding: 3rem;
 }
 
-.social-links a i:hover {
-    transform: scale(1.2);
-    background: #fafafa;
-    color: #38FF81;
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: start;
+}
+
+.social-links li {
+    padding-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.social-links i {
+    padding-right: 10px;
+    
+}
+
+.email {
+    color: #02B875;
+}
+
+.email:hover{
+    color: #33fdb2;
+}
+
+.copyright {
+    margin: auto;
+}
+
+
+/*-- Media Queries --*/
+@media screen and (min-width: 375px) and (max-width: 667px) and (orientation : portrait){
+    .intro-grey {
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+    .intro-grey h1, .intro-yellow h1 {
+        font-size: 3rem;
+    }
+
+    .intro-yellow {
+        padding: 4rem !important;
+    }
 }
