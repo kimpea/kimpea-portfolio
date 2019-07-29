@@ -18,13 +18,12 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#intro"><img src="static/img/kim.png" /><span class="nav-title">Kim P. | Web
-                Dev</span></a>
-
+        <a class="navbar-brand" href="#intro"><span class="nav-title">Kim P.</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
             aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
 
         <div class="collapse navbar-collapse" id="navbarColor03">
             <ul class="navbar-nav ml-auto">
@@ -33,9 +32,6 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -47,22 +43,25 @@
     <!-- Introduction -->
     <section id="intro">
         <div class="row">
-            <div class="col-lg-6 intro-grey">
+            <div class="col-lg-6 col-md-12 col-sm-12 intro-grey">
                 <div class="intro-content fromLeftIn" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
-                    <img src="static/img/me.png" class="profile-picture"/>
+                    <img src="static/img/me.png" class="profile-picture" />
                     <h1 class="display-4">Hi, I'm Kim.</h1>
-                    <p class="lead">I'm a Full Stack Web Developer from London.</p>
-                    <p class="lead">
-                        <a class="btn btn-warning btn-lg" href="#projects" role="button">See my work</a>
-                    </p>
+                    <p>I'm a Full Stack Web Developer from London.</p>
+                    <a class="btn btn-warning btn-lg" href="#projects" role="button">See my work</a>
                 </div>
             </div>
-            <div class="col-lg-6 intro-yellow">
+            <div class="col-lg-6 col-md-12 col-sm-12 intro-yellow">
                 <div class="about-content fromRightIn" data-scroll="toggle(.fromRightIn, .fromRightOut)">
                     <h1 class="display-4">About me</h1>
-                    <p class="about-description">Since beginning my coding journey a year ago, I'm now deeply in love with designing and building beautifully simplistic websites with just a few taps of the keyboard.</p>
-                    <p class="about-description">Fresh in the industry, I'm now ready to show off my newly gained skills in front and back-end development.</p>
-                    <p class="about-description">I work best with <strong>HTML and CSS (and slowly getting to grips with JavaScript)</strong> but there is always room to learn a new language, so now I'm turning to a new chapter in my coding journey with <strong>PHP and React JS</strong>.</p>
+                    <p class="about-description">Since beginning my coding journey a year ago, I'm now deeply in love
+                        with <strong>designing and building</strong> beautifully simplistic websites with just a few taps of the
+                        keyboard.</p>
+                    <p class="about-description"><strong>Fresh in the industry</strong>, I'm now ready to show off my newly gained skills
+                        in front and back-end development.</p>
+                    <p class="about-description">I work best with <strong>HTML and CSS (and slowly getting to grips with
+                            JavaScript)</strong> but there is always room to learn a new language, so now I'm turning to
+                        a new chapter in my coding journey with <strong>PHP and React JS</strong>.</p>
                 </div>
             </div>
         </div>
@@ -128,7 +127,7 @@
                     <span class="badge badge-primary">MongoDB</span>
                     <span class="badge badge-primary">Materialize</span>
                     <span class="badge badge-primary">Heroku</span>
-                    <a class="badge badge-warning" href="https://python-quiz.herokuapp.com" target="_blank"
+                    <a class="badge badge-warning" href="https://the-cookery-cove.herokuapp.com" target="_blank"
                         rel="noopener noreferrer">View Website</a>
                 </div>
             </div>
@@ -148,30 +147,54 @@
                     <span class="badge badge-primary">Django</span>
                     <span class="badge badge-primary">Bootstrap</span>
                     <span class="badge badge-primary">Heroku</span>
-                    <a class="badge badge-warning" href="https://the-cookery-cove.herokuapp.com" target="_blank"
+                    <a class="badge badge-warning" href="https://us-issue-tracker.herokuapp.com" target="_blank"
                         rel="noopener noreferrer">View Website</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills">
-    </section>
 
-    <section id="education">
-
-    </section>
-
-    <section id="contact">
-        <div class="container social-links">
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kimpea"><i
-                    class="fab fa-github"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kimpea/"><i
-                    class="fab fa-linkedin-in"></i></a>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="row">
+            <div class="contact">
+                <div class="container animatedParent">
+                    <h4 class="display-4 fromTopIn" data-scroll="toggle(.fromTopIn, .fromTopOut)">Like what you see?
+                        Let's get in touch</h4>
+                    <p class="fromBottomIn" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">If there's a project we
+                        can work on together, a bug you need fixing or you just want to say hi, email me at <a
+                            class="email" href="mailto:kim.pearton@live.co.uk">kim.pearton@live.co.uk</a></p>
+                    <p class="fromBottomIn" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">Otherwise, you can find
+                        me on:</p>
+                    <ul class="social-links fromBottomIn" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/kimpea"
+                                class="btn btn-success hvr-grow"><i class="fab fa-github"></i>GitHub</a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kimpea/"
+                                class="btn btn-success hvr-grow"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright &copy; 2019 Kim Pearton</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/93d8fa7e05.js"></script>
     <script src="static/js/ScrollTrigger.min.js"></script>
     <script>
