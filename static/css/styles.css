@@ -33,10 +33,11 @@ p, ul {
 .section-heading {
     margin-bottom: 2rem;
     padding: 0;
+    color: #000;
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .button {
@@ -313,30 +314,35 @@ nav a img {
     background-color: #fafafa;
 }
 
-.project-image {
-    padding: 3rem 5rem;
+.project-description {
+    background-color: #fafafa;
+    color: #000;
+    margin: auto;
+}
+
+.projects-container {
+    margin: auto;
+    padding: 3rem;
 }
 
 .project-image img {
     width: 100%;
-}
-
-.project-description {
-    background-color: #fafafa;
-    color: #000;
-    padding: 2rem;
-    margin: auto;
+    height: auto;
 }
 
 /*-- Skills --*/
 
+#skills {
+    height: 100vh;
+}
+
 .determinate {
-    background-color: #FE6301 !important;
+    background-color: #17a2b8  !important;
 }
 
 .progress {
     height: 2rem !important;
-    background-color: #fe924d !important;
+    background-color: #a0e8f3 !important;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -364,8 +370,16 @@ nav a img {
     padding: 3rem;
 }
 
+.skills-heading {
+    margin-bottom: 2rem;
+    padding: 0;
+    color: #fafafa;
+}
+
 .skills-jumbotron {
     padding: 3rem;
+    border-radius: 0px;
+    background-color: #f0ad4e;
 }
 
 .progress-container {
