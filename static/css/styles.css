@@ -276,8 +276,9 @@ nav a img {
 /*-- Intro --*/
 
 .intro-content {
-    padding: 2rem 0 1rem 0;
+    padding: 2rem;
     margin: 0;
+    text-align: left;
 }
 
 .intro-grey {
@@ -287,11 +288,35 @@ nav a img {
     height: 100vh;
 }
 
+@media screen and (min-width: 375px) and (max-width: 667px) and (orientation : portrait){
+    .intro-grey {
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+    .intro-grey h1, .intro-yellow h1 {
+        font-size: 3rem;
+    }
+
+    .intro-yellow {
+        padding: 4rem !important;
+    }
+}
+
 .intro-yellow {
     padding: 8rem;
     margin: auto;
     background-color: #f0ad4e;
     height: 100vh;
+    color: #fafafa;
+}
+
+.about-description {
+    font-size: 1rem;
+}
+
+.profile-picture {
+    width: 55%;
+    padding: 2rem 0 2rem 0;
 }
 
 /*-- About --*/
@@ -331,61 +356,6 @@ nav a img {
 }
 
 /*-- Skills --*/
-
-#skills {
-    height: 100vh;
-}
-
-.determinate {
-    background-color: #17a2b8  !important;
-}
-
-.progress {
-    height: 2rem !important;
-    background-color: #a0e8f3 !important;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.technologies-icons i {
-    font-size: 3rem;
-    padding: 7px;
-}
-
-.tech-heading {
-    margin: 10px 0 10px 0;
-    padding: 10px;
-}
-
-.technologies-icons img {
-    width: 58px;
-    height: 58px;
-    padding: 7px;
-    line-height: 1;
-}
-
-.technologies-container {
-    background-color: #fafafa;
-    color: #000;
-    padding: 3rem;
-}
-
-.skills-heading {
-    margin-bottom: 2rem;
-    padding: 0;
-    color: #fafafa;
-}
-
-.skills-jumbotron {
-    padding: 3rem;
-    border-radius: 0px;
-    background-color: #f0ad4e;
-}
-
-.progress-container {
-    padding: 3rem;
-    background-color: #fafafa;
-}
 
 /*-- Education --*/
 
