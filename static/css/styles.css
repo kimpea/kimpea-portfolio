@@ -307,6 +307,10 @@ nav a img {
     padding: 2rem 0 2rem 0;
 }
 
+.about-content {
+    margin-top: 15vh;
+}
+
 /*-- Projects --*/
 
 .project-row {
@@ -387,7 +391,7 @@ nav a img {
     }
 
     .about-description {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .projects-container {
@@ -415,6 +419,10 @@ nav a img {
 
     .profile-description {
         margin-top: 25vh;
+    }
+
+    .about-content {
+        margin-top: 2vh;
     }
 }
 
@@ -449,6 +457,10 @@ nav a img {
 
     .profile-description {
         margin-top: 18vh;
+    }
+
+    .about-content {
+        margin-top: 5vh;
     }
 }
 
