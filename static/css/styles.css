@@ -282,7 +282,7 @@ nav a img {
 }
 
 .intro-grey {
-    padding: 8rem;
+    padding: 7rem;
     margin: auto;
     background-color: #e9ecef;
     height: 100vh;
@@ -292,7 +292,7 @@ nav a img {
 
 
 .intro-yellow {
-    padding: 15rem 6rem;
+    padding: 7rem;
     margin: auto;
     background-color: #f0ad4e;
     height: 100vh;
@@ -304,7 +304,6 @@ nav a img {
 }
 
 .profile-picture {
-    width: 55%;
     padding: 2rem 0 2rem 0;
 }
 
@@ -322,7 +321,7 @@ nav a img {
 
 .projects-container {
     margin: auto;
-    padding: 3rem;
+    padding: 5rem 5rem;
 }
 
 .project-image img {
@@ -375,17 +374,106 @@ nav a img {
 }
 
 
-/*-- Media Queries --*/
-@media screen and (min-width: 375px) and (max-width: 667px) and (orientation : portrait){
+
+
+@media screen and (min-width: 300px) and (max-width: 812px) and (orientation: portrait){
     .intro-grey {
-        padding: 2rem;
-        margin-top: 3rem;
-    }
-    .intro-grey h1, .intro-yellow h1 {
-        font-size: 3rem;
+        padding: 2.5rem;
+        font-size: 1rem;
     }
 
     .intro-yellow {
-        padding: 4rem !important;
+        padding: 3rem;
+    }
+
+    .about-description {
+        font-size: 1.3rem;
+    }
+
+    .projects-container {
+        margin: auto;
+        padding: 2rem 3rem;
+        text-align: center;
+    }
+
+    .badge {
+        margin: 5px 0 5px 0;
+    }
+
+    #contact {
+        max-height: 100vh;
+    }
+
+    .profile-picture {
+        padding: 1.2rem 0;
+    }
+
+    .project-image img {
+        width: 75%;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .profile-description {
+        margin-top: 25vh;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 812px) and (orientation: landscape){
+    #contact {
+        min-height: 100vh;
+    }
+
+    .projects-container {
+        margin: auto;
+        padding: 2rem 3rem;
+        text-align: center;
+    }
+
+    .badge {
+        margin: 5px 0 5px 0;
+    }
+
+    .project-image img {
+        width: 75%;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .intro-grey, .intro-yellow {
+        padding: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .profile-description {
+        margin-top: 18vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .intro-yellow {
+        padding: 8rem;
+    }
+
+    .about-description, .intro-grey {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .about-description {
+        font-size: 1.2rem;
+    }
+
+    .projects-container {
+        margin: auto;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+    .badge {
+        margin: 5px 0 5px 0;
     }
 }
