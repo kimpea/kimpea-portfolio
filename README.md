@@ -1,6 +1,6 @@
 # Portfolio
 
-This is my web development portfolio.
+This is my web development portfolio. Click [here](https://kimpea.github.io/kimpea-portfolio/) to view.
 
 Created by Kimberley Pearton
 
