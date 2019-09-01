@@ -290,7 +290,6 @@ nav a img {
     font-size: 1.5rem;
 }
 
-
 .intro-yellow {
     padding: 7rem;
     margin: auto;
@@ -314,11 +313,11 @@ nav a img {
 /*-- Projects --*/
 
 .project-row {
-    background-color: #fafafa;
+    background-color: #fff;
 }
 
 .project-description {
-    background-color: #fafafa;
+    background-color: #fff;
     color: #000;
     margin: auto;
 }
@@ -326,13 +325,13 @@ nav a img {
 .projects-container {
     margin: auto;
     padding: 5rem 5rem;
+    background-color: #fff;
 }
 
 .project-image img {
     width: 100%;
     height: auto;
 }
-
 
 /*-- Contact --*/
 
@@ -362,14 +361,13 @@ nav a img {
 
 .social-links i {
     padding-right: 10px;
-    
 }
 
 .email {
     color: #02B875;
 }
 
-.email:hover{
+.email:hover {
     color: #33fdb2;
 }
 
@@ -377,114 +375,101 @@ nav a img {
     margin: auto;
 }
 
-
-
-
-@media screen and (min-width: 300px) and (max-width: 812px) and (orientation: portrait){
+@media screen and (min-width: 300px) and (max-width: 812px) and (orientation: portrait) {
     .intro-grey {
         padding: 2.5rem;
         font-size: 1rem;
     }
-
     .intro-yellow {
         padding: 3rem;
     }
-
     .about-description {
         font-size: 1.1rem;
     }
-
     .projects-container {
         margin: auto;
         padding: 2rem 3rem;
         text-align: center;
     }
-
     .badge {
         margin: 5px 0 5px 0;
     }
-
     #contact {
         max-height: 100vh;
     }
-
     .profile-picture {
         padding: 1.2rem 0;
     }
-
     .project-image img {
         width: 75%;
         margin: 1rem 0 1rem 0;
     }
-
     .profile-description {
         margin-top: 25vh;
     }
-
     .about-content {
         margin-top: 2vh;
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 812px) and (orientation: landscape){
+@media screen and (min-width: 300px) and (max-width: 812px) and (orientation: landscape) {
     #contact {
         min-height: 100vh;
     }
-
     .projects-container {
         margin: auto;
         padding: 2rem 3rem;
         text-align: center;
     }
-
     .badge {
         margin: 5px 0 5px 0;
     }
-
     .project-image img {
         width: 75%;
         margin: 1rem 0 1rem 0;
     }
-
     .intro-grey, .intro-yellow {
         padding: 2.5rem;
         font-size: 1rem;
     }
-
     .about-description {
         font-size: 1rem;
     }
-
     .profile-description {
         margin-top: 18vh;
     }
-
     .about-content {
         margin-top: 5vh;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .intro-yellow {
         padding: 8rem;
     }
-
     .about-description, .intro-grey {
         font-size: 1.8rem;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .intro-grey {
+        padding: 4rem;
+    }
+    .intro-yellow {
+        padding: 4rem;
+    }
+    .profile-picture {
+        width: 50%;
+    }
     .about-description {
         font-size: 1.2rem;
     }
-
     .projects-container {
         margin: auto;
         padding: 2rem 0;
         text-align: center;
     }
-    
     .badge {
         margin: 5px 0 5px 0;
     }
